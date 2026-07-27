@@ -16,6 +16,7 @@
     "Review"
   ],
   "Phone/Eco/OPPO/Daily_Kanban": [
+    "20260727_Daily",
     "20260724_Daily",
     "20260723_Daily",
     "20260722_Daily",
@@ -54,6 +55,7 @@
     "Daily_Kanban"
   ],
   "Phone/Eco/Xiaomi/Daily_Kanban": [
+    "20260727_Daily",
     "20260724_Daily",
     "20260723_Daily",
     "20260722_Daily",
@@ -77,5 +79,7 @@
   "Phone/Eco/OPPO/Daily_Kanban/20260723_Daily": [],
   "Phone/Eco/Xiaomi/Daily_Kanban/20260723_Daily": [],
   "Phone/Eco/OPPO/Daily_Kanban/20260724_Daily": [],
-  "Phone/Eco/Xiaomi/Daily_Kanban/20260724_Daily": []
+  "Phone/Eco/Xiaomi/Daily_Kanban/20260724_Daily": [],
+  "Phone/Eco/OPPO/Daily_Kanban/20260727_Daily": [],
+  "Phone/Eco/Xiaomi/Daily_Kanban/20260727_Daily": []
 }
