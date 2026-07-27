@@ -9,7 +9,8 @@
   "Phone/E_Commerce": [],
   "Phone/Eco": [
     "Xiaomi",
-    "OPPO"
+    "OPPO",
+    "Honor"
   ],
   "Phone/Eco/OPPO": [
     "Daily_Kanban",
@@ -81,5 +82,12 @@
   "Phone/Eco/OPPO/Daily_Kanban/20260724_Daily": [],
   "Phone/Eco/Xiaomi/Daily_Kanban/20260724_Daily": [],
   "Phone/Eco/OPPO/Daily_Kanban/20260727_Daily": [],
-  "Phone/Eco/Xiaomi/Daily_Kanban/20260727_Daily": []
+  "Phone/Eco/Xiaomi/Daily_Kanban/20260727_Daily": [],
+  "Phone/Eco/Honor": [
+    "Review"
+  ],
+  "Phone/Eco/Honor/Review": [
+    "20260727_Review"
+  ],
+  "Phone/Eco/Honor/Review/20260727_Review": []
 }
