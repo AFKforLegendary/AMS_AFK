@@ -1,100 +1,108 @@
 {
- "Phone": [
-  "Campaign",
-  "E_Commerce",
-  "Eco",
-  "Fans"
- ],
- "Phone/Campaign": [],
- "Phone/E_Commerce": [],
- "Phone/Eco": [
-  "Honor",
-  "OPPO",
-  "Xiaomi"
- ],
- "Phone/Eco/Honor": [
-  "Review"
- ],
- "Phone/Eco/Honor/Review": [
-  "20260727_Review"
- ],
- "Phone/Eco/Honor/Review/20260727_Review": [],
- "Phone/Eco/OPPO": [
-  "Daily_Kanban",
-  "Review"
- ],
- "Phone/Eco/OPPO/Daily_Kanban": [
-  "20260727_Daily",
-  "20260724_Daily",
-  "20260723_Daily",
-  "20260722_Daily",
-  "20260721_Daily",
-  "20260720_Daily",
-  "20260717_Daily",
-  "20260716_Daily",
-  "20260715_Daily",
-  "20260714_Daily",
-  "20260713_Daily",
-  "20260710_Daily",
-  "20260709_Daily",
-  "20260708_Daily",
-  "20260707_Daily"
- ],
- "Phone/Eco/OPPO/Daily_Kanban/20260707_Daily": [],
- "Phone/Eco/OPPO/Daily_Kanban/20260708_Daily": [],
- "Phone/Eco/OPPO/Daily_Kanban/20260709_Daily": [],
- "Phone/Eco/OPPO/Daily_Kanban/20260710_Daily": [],
- "Phone/Eco/OPPO/Daily_Kanban/20260713_Daily": [],
- "Phone/Eco/OPPO/Daily_Kanban/20260714_Daily": [],
- "Phone/Eco/OPPO/Daily_Kanban/20260715_Daily": [],
- "Phone/Eco/OPPO/Daily_Kanban/20260716_Daily": [],
- "Phone/Eco/OPPO/Daily_Kanban/20260717_Daily": [],
- "Phone/Eco/OPPO/Daily_Kanban/20260720_Daily": [],
- "Phone/Eco/OPPO/Daily_Kanban/20260721_Daily": [],
- "Phone/Eco/OPPO/Daily_Kanban/20260722_Daily": [],
- "Phone/Eco/OPPO/Daily_Kanban/20260723_Daily": [],
- "Phone/Eco/OPPO/Daily_Kanban/20260724_Daily": [],
- "Phone/Eco/OPPO/Daily_Kanban/20260727_Daily": [],
- "Phone/Eco/OPPO/Review": [
-  "20260731_Review",
-  "20260703_Review"
- ],
- "Phone/Eco/OPPO/Review/20260703_Review": [
-  "img"
- ],
- "Phone/Eco/OPPO/Review/20260703_Review/img": [],
- "Phone/Eco/OPPO/Review/20260731_Review": [],
- "Phone/Eco/Xiaomi": [
-  "Daily_Kanban",
-  "Review"
- ],
- "Phone/Eco/Xiaomi/Daily_Kanban": [
-  "20260727_Daily",
-  "20260724_Daily",
-  "20260723_Daily",
-  "20260722_Daily",
-  "20260721_Daily",
-  "20260720_Daily",
-  "20260717_Daily",
-  "20260716_Daily",
-  "20260715_Daily",
-  "20260714_Daily",
-  "20260712_Daily"
- ],
- "Phone/Eco/Xiaomi/Daily_Kanban/20260712_Daily": [],
- "Phone/Eco/Xiaomi/Daily_Kanban/20260714_Daily": [],
- "Phone/Eco/Xiaomi/Daily_Kanban/20260715_Daily": [],
- "Phone/Eco/Xiaomi/Daily_Kanban/20260716_Daily": [],
- "Phone/Eco/Xiaomi/Daily_Kanban/20260717_Daily": [],
- "Phone/Eco/Xiaomi/Daily_Kanban/20260720_Daily": [],
- "Phone/Eco/Xiaomi/Daily_Kanban/20260721_Daily": [],
- "Phone/Eco/Xiaomi/Daily_Kanban/20260722_Daily": [],
- "Phone/Eco/Xiaomi/Daily_Kanban/20260723_Daily": [],
- "Phone/Eco/Xiaomi/Daily_Kanban/20260724_Daily": [],
- "Phone/Eco/Xiaomi/Daily_Kanban/20260727_Daily": [],
- "Phone/Eco/Xiaomi/Review": [
-  "20260805_Review"
- ],
- "Phone/Eco/Xiaomi/Review/20260805_Review": [],
- "Phone/Fans": []
+  "Phone": [
+    "Campaign",
+    "E_Commerce",
+    "Eco",
+    "Fans"
+  ],
+  "Phone/Campaign": [],
+  "Phone/E_Commerce": [],
+  "Phone/Eco": [
+    "Honor",
+    "OPPO",
+    "Xiaomi",
+    "Ecosystem"
+  ],
+  "Phone/Eco/Honor": [
+    "Review"
+  ],
+  "Phone/Eco/Honor/Review": [
+    "20260727_Review"
+  ],
+  "Phone/Eco/Honor/Review/20260727_Review": [],
+  "Phone/Eco/OPPO": [
+    "Daily_Kanban",
+    "Review"
+  ],
+  "Phone/Eco/OPPO/Daily_Kanban": [
+    "20260727_Daily",
+    "20260724_Daily",
+    "20260723_Daily",
+    "20260722_Daily",
+    "20260721_Daily",
+    "20260720_Daily",
+    "20260717_Daily",
+    "20260716_Daily",
+    "20260715_Daily",
+    "20260714_Daily",
+    "20260713_Daily",
+    "20260710_Daily",
+    "20260709_Daily",
+    "20260708_Daily",
+    "20260707_Daily"
+  ],
+  "Phone/Eco/OPPO/Daily_Kanban/20260707_Daily": [],
+  "Phone/Eco/OPPO/Daily_Kanban/20260708_Daily": [],
+  "Phone/Eco/OPPO/Daily_Kanban/20260709_Daily": [],
+  "Phone/Eco/OPPO/Daily_Kanban/20260710_Daily": [],
+  "Phone/Eco/OPPO/Daily_Kanban/20260713_Daily": [],
+  "Phone/Eco/OPPO/Daily_Kanban/20260714_Daily": [],
+  "Phone/Eco/OPPO/Daily_Kanban/20260715_Daily": [],
+  "Phone/Eco/OPPO/Daily_Kanban/20260716_Daily": [],
+  "Phone/Eco/OPPO/Daily_Kanban/20260717_Daily": [],
+  "Phone/Eco/OPPO/Daily_Kanban/20260720_Daily": [],
+  "Phone/Eco/OPPO/Daily_Kanban/20260721_Daily": [],
+  "Phone/Eco/OPPO/Daily_Kanban/20260722_Daily": [],
+  "Phone/Eco/OPPO/Daily_Kanban/20260723_Daily": [],
+  "Phone/Eco/OPPO/Daily_Kanban/20260724_Daily": [],
+  "Phone/Eco/OPPO/Daily_Kanban/20260727_Daily": [],
+  "Phone/Eco/OPPO/Review": [
+    "20260731_Review",
+    "20260703_Review"
+  ],
+  "Phone/Eco/OPPO/Review/20260703_Review": [
+    "img"
+  ],
+  "Phone/Eco/OPPO/Review/20260703_Review/img": [],
+  "Phone/Eco/OPPO/Review/20260731_Review": [],
+  "Phone/Eco/Xiaomi": [
+    "Daily_Kanban",
+    "Review"
+  ],
+  "Phone/Eco/Xiaomi/Daily_Kanban": [
+    "20260727_Daily",
+    "20260724_Daily",
+    "20260723_Daily",
+    "20260722_Daily",
+    "20260721_Daily",
+    "20260720_Daily",
+    "20260717_Daily",
+    "20260716_Daily",
+    "20260715_Daily",
+    "20260714_Daily",
+    "20260712_Daily"
+  ],
+  "Phone/Eco/Xiaomi/Daily_Kanban/20260712_Daily": [],
+  "Phone/Eco/Xiaomi/Daily_Kanban/20260714_Daily": [],
+  "Phone/Eco/Xiaomi/Daily_Kanban/20260715_Daily": [],
+  "Phone/Eco/Xiaomi/Daily_Kanban/20260716_Daily": [],
+  "Phone/Eco/Xiaomi/Daily_Kanban/20260717_Daily": [],
+  "Phone/Eco/Xiaomi/Daily_Kanban/20260720_Daily": [],
+  "Phone/Eco/Xiaomi/Daily_Kanban/20260721_Daily": [],
+  "Phone/Eco/Xiaomi/Daily_Kanban/20260722_Daily": [],
+  "Phone/Eco/Xiaomi/Daily_Kanban/20260723_Daily": [],
+  "Phone/Eco/Xiaomi/Daily_Kanban/20260724_Daily": [],
+  "Phone/Eco/Xiaomi/Daily_Kanban/20260727_Daily": [],
+  "Phone/Eco/Xiaomi/Review": [
+    "20260805_Review"
+  ],
+  "Phone/Eco/Xiaomi/Review/20260805_Review": [],
+  "Phone/Fans": [],
+  "Phone/Eco/Ecosystem": [
+    "Monthly_Review"
+  ],
+  "Phone/Eco/Ecosystem/Monthly_Review": [
+    "20260811_Phone_Eco_Monthly_Report"
+  ],
+  "Phone/Eco/Ecosystem/Monthly_Review/20260811_Phone_Eco_Monthly_Report": []
 }
