@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>手机生态行业月报 · 2026年8月</title>
+<style>
+:root{
+  --bg:#f5f7fa; --card:#ffffff; --ink:#1f2933; --sub:#67727e; --line:#e3e8ef;
+  --brand:#2b6cb0; --brand2:#2c7a7b; --accent:#dd6b20; --soft:#eef4fb;
+  --c1:#e63946; --c2:#457b9d; --c3:#2a9d8f; --c4:#e9a23b; --c5:#9b5de5; --c6:#f15bb5; --c7:#00bbf9; --c8:#fb8500;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.55;}
+.wrap{max-width:1080px;margin:0 auto;padding:24px 20px 60px;}
+header.top{background:linear-gradient(120deg,#2b6cb0,#2c7a7b);color:#fff;border-radius:16px;padding:26px 30px;box-shadow:0 6px 20px rgba(43,108,176,.18);}
+header.top h1{margin:0;font-size:24px;letter-spacing:.5px;}
+header.top .meta{margin-top:6px;font-size:13px;opacity:.9;}
+.tabs{display:flex;gap:8px;margin:22px 0 18px;}
+.tab{flex:0 0 auto;padding:11px 26px;border-radius:12px;background:var(--card);border:1px solid var(--line);cursor:pointer;font-weight:600;font-size:15px;color:var(--sub);transition:.2s;}
+.tab.active{background:var(--brand);color:#fff;border-color:var(--brand);box-shadow:0 4px 12px rgba(43,108,176,.25);}
+.panel{display:none;}
+.panel.active{display:block;animation:fade .25s ease;}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.sec{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin-bottom:18px;box-shadow:0 2px 8px rgba(31,41,51,.04);}
+.sec h2{margin:0 0 4px;font-size:19px;display:flex;align-items:center;gap:10px;}
+.sec h2 .num{background:var(--brand);color:#fff;width:28px;height:28px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;}
+.sec .desc{color:var(--sub);font-size:13px;margin:2px 0 16px;}
+.sub{font-size:15px;font-weight:700;margin:18px 0 10px;color:var(--brand2);border-left:4px solid var(--brand2);padding-left:10px;}
+.chartwrap{position:relative;width:100%;overflow:hidden;}
+svg.chart{width:100%;height:auto;display:block;}
+.legend{display:flex;flex-wrap:wrap;gap:14px;margin:10px 2px 4px;font-size:13px;color:var(--sub);}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px;}
+.tooltip{position:absolute;pointer-events:none;background:rgba(31,41,51,.94);color:#fff;font-size:12px;padding:9px 11px;border-radius:8px;display:none;z-index:5;min-width:150px;box-shadow:0 4px 14px rgba(0,0,0,.25);}
+.tooltip .tt-d{font-weight:700;margin-bottom:5px;border-bottom:1px solid rgba(255,255,255,.25);padding-bottom:4px;}
+.note{font-size:12px;color:var(--sub);margin-top:8px;background:var(--soft);border-radius:8px;padding:8px 12px;}
+.warn{color:#d93636;font-weight:600;}
+table{width:100%;border-collapse:collapse;font-size:13px;margin-top:6px;}
+th,td{padding:9px 10px;text-align:right;border-bottom:1px solid var(--line);}
+th{background:var(--soft);color:var(--sub);font-weight:600;font-size:12.5px;}
+td:first-child,th:first-child{text-align:left;}
+tbody tr:hover{background:#fafcff;}
+.placeholder{text-align:center;color:var(--sub);padding:60px 20px;font-size:15px;}
+.placeholder .big{font-size:40px;margin-bottom:10px;}
+.doclink{display:inline-flex;align-items:center;gap:8px;background:var(--brand);color:#fff;text-decoration:none;padding:9px 16px;border-radius:10px;font-weight:600;font-size:14px;}
+.doclink:hover{opacity:.92;}
+ul.sum{margin:12px 0 0;padding-left:20px;}
+ul.sum li{margin:6px 0;font-size:14px;}
+.pill{display:inline-block;background:#fff4e6;color:var(--accent);border:1px solid #fed7aa;border-radius:999px;font-size:11px;padding:2px 9px;margin-left:6px;}
+.tag{display:inline-block;background:#e6f7f4;color:var(--brand2);border:1px solid #b2dfd8;border-radius:6px;font-size:11px;padding:2px 8px;}
+footer{text-align:center;color:var(--sub);font-size:12px;margin-top:30px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <h1>手机生态行业月报</h1>
+  <div class="meta">报告周期：2026年8月复盘 + 2026年9月信息同步 ｜ 数据口径：应用商店 & 浏览器双大盘 ｜ 生成日期：2026-09-09</div>
+</header>
+
+<div class="tabs">
+  <div class="tab active" data-tab="appstore">应用商店</div>
+  <div class="tab" data-tab="browser">浏览器</div>
+</div>
+
+<!-- ============ 应用商店 ============ -->
+<div class="panel active" id="panel-appstore">
+
+  <div class="sec">
+    <h2><span class="num">一</span>8月数据复盘</h2>
+    <div class="desc">基于 2026年8月整月投放数据，按大盘、优化目标、创意、品类四个维度拆解。</div>
+
+    <div class="sub">1.1 应用商店整体大盘（每日消耗走势）</div>
+    <div class="chartwrap" id="c-appstore"></div>
+    <div class="legend" id="lg-appstore"></div>
+    <div class="note">竖坐标按真实消耗比例绘制并已脱敏，隐藏具体数值，鼠标悬停仅显示日期，不展示消耗金额。</div>
+
+    <div class="sub">1.2 二级开户行业 · AI与网络综合工具（每日消耗走势）</div>
+    <div class="chartwrap" id="c-lv2"></div>
+    <div class="legend" id="lg-lv2"></div>
+
+    <div class="sub">1.3 一级开户行业整体（每日消耗走势）</div>
+    <div class="chartwrap" id="c-lv1"></div>
+    <div class="legend" id="lg-lv1"></div>
+    <div class="note">注：2026年8月应用商店消耗 100% 集中于「AI与网络综合工具」二级行业、100% 集中于「软件工具」一级行业，故 1.1/1.2/1.3 三条曲线高度重合，属真实数据分布。</div>
+  </div>
+
+  <div class="sec">
+    <div class="sub" style="margin-top:0">2、优化目标投放数据（按优化目标组合）</div>
+    <div id="t-12"></div>
+    <div class="note">消耗占比 = 该组合消耗 / 大盘总消耗；CPM/目标出价单位为「元」；CTR、浅层·深层目标CVR 为率（%）。表格按消耗占比从高到低排列。</div>
+  </div>
+
+  <div class="sec">
+    <div class="sub" style="margin-top:0">3、分创意投放数据</div>
+    <div style="font-weight:600;margin:6px 0 2px;font-size:14px;color:var(--sub)">3.1 按创意形式（仅列消耗 &gt; 1万）</div>
+    <div id="t-13c"></div>
+    <div style="font-weight:600;margin:18px 0 2px;font-size:14px;color:var(--sub)">3.2 按是否妙思 AIGC 素材</div>
+    <div id="t-13a"></div>
+  </div>
+
+  <div class="sec">
+    <div class="sub" style="margin-top:0">4、分品类投放数据（按浅层优化目标 TOP10 上游 APP）</div>
+    <div id="t-14"></div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">二</span>9月重要信息同步</h2>
+    <div class="desc">面向团队的前瞻参考：优量汇大盘趋势、历史同期（2025年8月）优化目标分析。</div>
+
+    <div class="sub">1、优量汇大盘趋势</div>
+    <a class="doclink" href="https://doc.weixin.qq.com/doc/w3_AIYAiXi4AKICNsqhGbiaeQjOpZcV2_a?scode=AJEAIQdfAAom07JpifAUYArAZNAC8" target="_blank">📄 优量汇大盘趋势文档（点击查看）</a>
+    <ul class="sum" id="uq-sum">
+      <li style="color:#b26a00"><b>⏳ 待补充</b>：本月优量汇大盘趋势（含概要说明 / 流量高峰 / 流量趋势 / 激励广告 / 开屏广告）由运营侧提供后填入。</li>
+    </ul>
+
+    <div class="sub">2、重要信息同步</div>
+    <div class="note" style="border-left:4px solid var(--accent);background:rgba(99,102,241,.06);padding:14px 18px;border-radius:8px;line-height:1.9;color:var(--text)">
+      <b>【平台能力变更 · 屏蔽包将全面下线】</b><br>
+      据流量侧通知，平台近期对「屏蔽包」能力进行调整：因其他行业客户集中、频繁使用该能力，导致可投流量收窄。为支撑流量拓宽，平台后续将<b>【下线全部屏蔽包能力】</b>，以扩大各客户可投流量范围。<br><br>
+      预计<b>【9月10日起开始逐步下线】</b>，请相关老师知悉。后续如有投放诉求或疑问，可随时在群内沟通。
+    </div>
+
+    <div class="sub">3、历史 2025年8月 优化目标分析</div>
+    <div class="sub" style="border-color:var(--accent);color:var(--accent)">2.1 流量趋势（2025年8月，真实消耗、坐标轴隐藏）</div>
+    <div class="chartwrap" id="c-h-appstore"></div>
+    <div class="legend" id="lg-h-appstore"></div>
+    <div class="chartwrap" id="c-h-lv2" style="margin-top:14px"></div>
+    <div class="legend" id="lg-h-lv2"></div>
+    <div class="chartwrap" id="c-h-lv1" style="margin-top:14px"></div>
+    <div class="legend" id="lg-h-lv1"></div>
+
+    <div class="sub" style="border-color:var(--accent);color:var(--accent)">2.2 优化目标占比</div>
+    <div style="font-weight:600;margin:14px 0 2px;font-size:14px;color:var(--sub)">2.2.1 优化目标（按优化目标组合）</div>
+    <div id="t-22o"></div>
+  </div>
+
+</div>
+
+<!-- ============ 浏览器 ============ -->
+<div class="panel" id="panel-browser">
+  <div class="sec">
+    <h2><span class="num">一</span>8月数据复盘</h2>
+    <div class="desc">基于 2026年8月整月投放数据（浏览器大盘推广标的物ID：2000026223 / 2000027850），按大盘、优化目标、创意三个维度拆解。</div>
+
+    <div class="sub">1.1 浏览器整体大盘（每日消耗走势）</div>
+    <div class="chartwrap" id="c-b-appstore"></div>
+    <div class="legend" id="lg-b-appstore"></div>
+    <div class="note">竖坐标按真实消耗比例绘制并已脱敏，隐藏具体数值，鼠标悬停仅显示日期，不展示消耗金额。</div>
+
+    <div class="sub" id="b-lv2-title">1.2 二级开户行业 · AI与网络综合工具（每日消耗走势）</div>
+    <div class="chartwrap" id="c-b-lv2"></div>
+    <div class="legend" id="lg-b-lv2"></div>
+
+    <div class="sub" id="b-lv1-title">1.3 一级开户行业整体 · 软件工具（每日消耗走势）</div>
+    <div class="chartwrap" id="c-b-lv1"></div>
+    <div class="legend" id="lg-b-lv1"></div>
+    <div class="note">注：1.2/1.3 与应用商店 TAB 同口径，取「整张表（应用商店+浏览器）」的二级开户行业=AI与网络综合工具、一级开户行业=软件工具 整体趋势，因此这两条线与应用商店 TAB 的 1.2/1.3 数值一致；1.1 仅含两个浏览器推广标的物，体量低于 1.2/1.3。</div>
+  </div>
+
+  <div class="sec">
+    <div class="sub" style="margin-top:0">2、优化目标投放数据（按优化目标组合）</div>
+    <div id="t-b-12"></div>
+    <div class="note">消耗占比 = 该组合消耗 / 大盘总消耗；CPM/目标出价单位为「元」；CTR、浅层·深层目标CVR 为率（%）。表格按消耗占比从高到低排列。</div>
+  </div>
+
+  <div class="sec">
+    <div class="sub" style="margin-top:0">3、分创意投放数据</div>
+    <div style="font-weight:600;margin:6px 0 2px;font-size:14px;color:var(--sub)">3.1 按创意形式（仅列消耗 &gt; 1万）</div>
+    <div id="t-b-13c"></div>
+    <div style="font-weight:600;margin:18px 0 2px;font-size:14px;color:var(--sub)">3.2 按是否妙思 AIGC 素材</div>
+    <div id="t-b-13a"></div>
+  </div>
+</div>
+
+<footer>本报告趋势图不展示具体消耗金额（坐标轴数值隐藏，仅显示曲线）｜ 数据经手机行业生态链路解析规则归一化</footer>
+</div>
+
+<script>
+const DATA = {"trend_1_1": {"dates": ["08-01", "08-02", "08-03", "08-04", "08-05", "08-06", "08-07", "08-08", "08-09", "08-10", "08-11", "08-12", "08-13", "08-14", "08-15", "08-16", "08-17", "08-18", "08-19", "08-20", "08-21", "08-22", "08-23", "08-24", "08-25", "08-26", "08-27", "08-28", "08-29", "08-30", "08-31"], "overall": [57.48, 55.69, 57.99, 61.41, 63.95, 66.71, 61.23, 53.45, 55.45, 55.58, 56.85, 59.05, 60.92, 56.6, 58.39, 57.83, 54.37, 54.85, 51.72, 50.38, 58.13, 56.57, 54.22, 63.1, 58.72, 55.51, 53.73, 56.3, 53.44, 52.69, 50.87], "lv2_ai": [91.95, 88.93, 92.94, 97.81, 98.79, 100.0, 96.05, 84.34, 87.43, 72.34, 73.13, 75.99, 70.05, 66.06, 66.79, 66.32, 63.55, 64.26, 60.01, 59.1, 67.66, 66.81, 68.98, 85.64, 90.57, 83.2, 86.36, 86.25, 84.06, 83.38, 85.35], "lv1_all": [91.95, 88.93, 92.94, 97.81, 98.79, 100.0, 96.05, 84.34, 87.43, 72.34, 73.13, 75.99, 70.05, 66.06, 66.79, 66.32, 63.55, 64.26, 60.01, 59.1, 67.66, 66.81, 68.98, 85.64, 90.57, 83.2, 86.36, 86.25, 84.06, 83.38, 85.35]}, "table_1_2": [{"combo": "104-0-0-0-0", "name": "激活", "share": 52.58, "cpm": 6.54, "bid": 6.54, "ctr": 13.59, "scvr": 8.49, "dcvr": "—"}, {"combo": "30022-0-0-0-0", "name": "关键页面访问人数", "share": 34.43, "cpm": 4.45, "bid": 1.92, "ctr": 12.05, "scvr": 2.83, "dcvr": "—"}, {"combo": "204-0-0-0-0", "name": "下单", "share": 4.73, "cpm": 3.02, "bid": 4.31, "ctr": 15.29, "scvr": 0.4, "dcvr": "—"}, {"combo": "301-0-0-0-0", "name": "关键页面访问", "share": 4.73, "cpm": 5.2, "bid": 0.81, "ctr": 10.43, "scvr": 8.47, "dcvr": "—"}, {"combo": "104-106-0-0-0", "name": "激活-次日留存", "share": 3.45, "cpm": 4.48, "bid": 83.05, "ctr": 8.72, "scvr": 0.34, "dcvr": 0.07519486528394666}, {"combo": "108-0-0-0-0", "name": "付费", "share": 0.07, "cpm": 4.44, "bid": 4.05, "ctr": 5.84, "scvr": 2.24, "dcvr": "—"}, {"combo": "105-0-0-0-0", "name": "注册", "share": 0.01, "cpm": 9.19, "bid": 3.15, "ctr": 22.95, "scvr": 0.06, "dcvr": "—"}], "table_1_3_creative": [{"id": "711", "name": "横版大图 16:9", "share": 34.21, "cpm": 4.4, "bid": 7.92, "ctr": 12.89, "scvr": 8.6}, {"id": "712", "name": "竖版大图 9:16", "share": 30.99, "cpm": 8.47, "bid": 13.51, "ctr": 15.37, "scvr": 2.85}, {"id": "721", "name": "竖版视频 9:16", "share": 21.2, "cpm": 4.62, "bid": 12.87, "ctr": 11.73, "scvr": 3.3}, {"id": "720", "name": "横版视频 16:9", "share": 13.12, "cpm": 4.46, "bid": 8.36, "ctr": 10.92, "scvr": 2.41}, {"id": "1529", "name": "闪屏视频  9:16", "share": 0.44, "cpm": 10.75, "bid": 1.64, "ctr": 10.7, "scvr": 15.39}], "table_1_3_aigc": [{"aigc": "否", "share": 38.37, "cpm": 5.05, "bid": 9.86, "ctr": 13.27, "scvr": 5.25}, {"aigc": "是", "share": 61.63, "cpm": 5.38, "bid": 9.2, "ctr": 12.4, "scvr": 5.32}], "trend_2_1": {"dates": ["08-01", "08-02", "08-03", "08-04", "08-05", "08-06", "08-07", "08-08", "08-09", "08-10", "08-11", "08-12", "08-13", "08-14", "08-15", "08-16", "08-17", "08-18", "08-19", "08-20", "08-21", "08-22", "08-23", "08-24", "08-25", "08-26", "08-27", "08-28", "08-29", "08-30", "08-31"], "overall": [74.47, 73.05, 76.94, 80.49, 83.72, 81.83, 82.14, 73.52, 67.15, 76.48, 79.78, 66.34, 48.39, 53.33, 46.35, 49.91, 53.15, 46.52, 48.51, 42.38, 44.72, 48.09, 47.99, 48.14, 46.27, 46.87, 47.38, 47.81, 42.59, 46.11, 41.07], "lv2_ai": [98.61, 99.99, 88.39, 82.15, 85.37, 83.37, 83.75, 75.18, 68.76, 77.5, 81.44, 68.02, 50.05, 54.99, 47.97, 51.57, 54.81, 48.17, 49.69, 44.04, 46.34, 49.68, 49.64, 49.59, 47.68, 48.54, 49.04, 49.47, 44.25, 47.77, 42.73], "lv1_all": [98.62, 100.0, 88.39, 82.15, 85.37, 83.38, 83.77, 75.19, 68.78, 77.52, 81.46, 68.04, 50.06, 55.0, 47.98, 51.58, 54.83, 48.19, 49.71, 44.06, 46.35, 49.69, 49.65, 49.59, 47.69, 48.54, 49.07, 49.51, 44.29, 47.82, 42.77]}, "table_2_2_opt": [{"goal": "付费", "share": 52.5, "cpm": 4.45, "bid": 20.7, "ctr": 6.45, "scvr": 0.47}, {"goal": "关键页面访问人数", "share": 19.24, "cpm": 2.47, "bid": 1.56, "ctr": 7.28, "scvr": 3.52}, {"goal": "关键页面访问", "share": 14.19, "cpm": 2.43, "bid": 0.21, "ctr": 7.16, "scvr": 54.15}, {"goal": "激活", "share": 14.07, "cpm": 2.38, "bid": 1.8, "ctr": 7.24, "scvr": 2.12}], "table_1_4": {"下单": [{"app": "红果", "share": 41.31, "cpm": 2.65, "ctr": 14.49, "scvr": 0.39}, {"app": "今日头条", "share": 25.09, "cpm": 6.13, "ctr": 13.41, "scvr": 0.51}, {"app": "58同城", "share": 9.63, "cpm": 1.8, "ctr": 16.91, "scvr": 0.35}, {"app": "抖音", "share": 7.66, "cpm": 3.37, "ctr": 13.58, "scvr": 0.25}, {"app": "京东", "share": 5.55, "cpm": 2.1, "ctr": 21.15, "scvr": 0.56}, {"app": "豆包", "share": 5.05, "cpm": 3.06, "ctr": 14.19, "scvr": 0.32}, {"app": "百度", "share": 1.48, "cpm": 3.94, "ctr": 18.91, "scvr": 0.37}, {"app": "KK", "share": 1.08, "cpm": 2.91, "ctr": 14.26, "scvr": 0.64}, {"app": "汽水音乐", "share": 0.93, "cpm": 2.83, "ctr": 16.96, "scvr": 0.49}, {"app": "小红书", "share": 0.37, "cpm": 6.43, "ctr": 14.78, "scvr": 0.21}], "付费": [{"app": "千问", "share": 98.64, "cpm": 4.43, "ctr": 5.73, "scvr": 2.31}, {"app": "京东", "share": 1.36, "cpm": 5.25, "ctr": 15.54, "scvr": 0.02}], "注册": [{"app": "红果", "share": 100.0, "cpm": 9.19, "ctr": 22.95, "scvr": 0.06}], "激活": [{"app": "红果", "share": 16.88, "cpm": 7.76, "ctr": 11.35, "scvr": 2.79}, {"app": "豆包", "share": 13.18, "cpm": 5.84, "ctr": 11.97, "scvr": 13.2}, {"app": "抖音", "share": 12.87, "cpm": 5.86, "ctr": 16.64, "scvr": 1.35}, {"app": "今日头条", "share": 11.23, "cpm": 8.7, "ctr": 17.7, "scvr": 1.8}, {"app": "千问", "share": 8.02, "cpm": 4.48, "ctr": 11.65, "scvr": 18.4}, {"app": "腾讯元宝", "share": 5.54, "cpm": 4.09, "ctr": 7.89, "scvr": 1.03}, {"app": "阿里巴巴", "share": 3.3, "cpm": 6.51, "ctr": 12.91, "scvr": 2.03}, {"app": "拼多多", "share": 3.29, "cpm": 4.91, "ctr": 11.3, "scvr": 0.96}, {"app": "哔哩哔哩", "share": 3.19, "cpm": 3.69, "ctr": 15.11, "scvr": 35.99}, {"app": "番茄", "share": 2.42, "cpm": 16.12, "ctr": 18.34, "scvr": 1.45}]}, "table_2_2_pick": [], "trend_b_1_1": {"dates": ["08-01", "08-02", "08-03", "08-04", "08-05", "08-06", "08-07", "08-08", "08-09", "08-10", "08-11", "08-12", "08-13", "08-14", "08-15", "08-16", "08-17", "08-18", "08-19", "08-20", "08-21", "08-22", "08-23", "08-24", "08-25", "08-26", "08-27", "08-28", "08-29", "08-30", "08-31"], "lv2_name": "AI与网络综合工具", "lv1_name": "软件工具", "overall": [9.54, 7.84, 7.29, 7.9, 8.01, 8.8, 7.82, 7.53, 7.88, 7.45, 7.23, 7.89, 7.52, 6.94, 6.36, 6.47, 7.12, 7.33, 7.73, 7.44, 7.37, 8.13, 8.82, 8.52, 8.59, 9.67, 10.8, 11.81, 12.36, 12.22, 12.32], "lv2_ai": [91.95, 88.93, 92.94, 97.81, 98.79, 100.0, 96.05, 84.34, 87.43, 72.34, 73.13, 75.99, 70.05, 66.06, 66.79, 66.32, 63.55, 64.26, 60.01, 59.1, 67.66, 66.81, 68.98, 85.64, 90.57, 83.2, 86.36, 86.25, 84.06, 83.38, 85.35], "lv1_all": [91.95, 88.93, 92.94, 97.81, 98.79, 100.0, 96.05, 84.34, 87.43, 72.34, 73.13, 75.99, 70.05, 66.06, 66.79, 66.32, 63.55, 64.26, 60.01, 59.1, 67.66, 66.81, 68.98, 85.64, 90.57, 83.2, 86.36, 86.25, 84.06, 83.38, 85.35]}, "table_b_1_2": [{"combo": "30022-0-0-0-0", "name": "关键页面访问人数", "share": 73.04, "cpm": 5.85, "bid": 1.0, "ctr": 10.55, "scvr": 14.83, "dcvr": "—"}, {"combo": "301-0-0-0-0", "name": "关键页面访问", "share": 25.97, "cpm": 8.23, "bid": 0.11, "ctr": 26.49, "scvr": 28.02, "dcvr": "—"}, {"combo": "204-0-0-0-0", "name": "下单", "share": 0.75, "cpm": 4.87, "bid": 17.16, "ctr": 14.53, "scvr": 0.1, "dcvr": "—"}, {"combo": "104-0-0-0-0", "name": "激活", "share": 0.17, "cpm": 4.95, "bid": 8.69, "ctr": 12.06, "scvr": 0.11, "dcvr": "—"}, {"combo": "108-0-0-0-0", "name": "付费", "share": 0.07, "cpm": 11.56, "bid": 59.91, "ctr": 13.54, "scvr": 0.22, "dcvr": "—"}], "table_b_1_3_creative": [{"id": "721", "name": "竖版视频 9:16", "share": 28.51, "cpm": 7.07, "bid": 0.68, "ctr": 19.34, "scvr": 23.14}, {"id": "711", "name": "横版大图 16:9", "share": 24.82, "cpm": 5.42, "bid": 0.93, "ctr": 10.34, "scvr": 16.5}, {"id": "720", "name": "横版视频 16:9", "share": 23.72, "cpm": 8.41, "bid": 1.21, "ctr": 19.33, "scvr": 19.04}, {"id": "712", "name": "竖版大图 9:16", "share": 18.21, "cpm": 5.52, "bid": 1.1, "ctr": 9.22, "scvr": 18.22}, {"id": "1529", "name": "闪屏视频  9:16", "share": 2.68, "cpm": 4.01, "bid": 1.1, "ctr": 6.77, "scvr": 20.45}, {"id": "642", "name": "常规多图 1:1 四图", "share": 1.97, "cpm": 7.08, "bid": 0.82, "ctr": 11.1, "scvr": 7.43}], "table_b_1_3_aigc": [{"aigc": "否", "share": 52.4, "cpm": 7.22, "bid": 2.36, "ctr": 17.15, "scvr": 21.28}, {"aigc": "是", "share": 47.6, "cpm": 5.56, "bid": 0.89, "ctr": 10.91, "scvr": 17.6}]};
+const PALETTE = ['#e63946','#457b9d','#2a9d8f','#e9a23b','#9b5de5','#f15bb5','#00bbf9','#fb8500','#06d6a0','#ef476f'];
+
+function fmt(v, suffix){ if(v===null||v===undefined) return '—'; if(suffix==='%') return v.toFixed(2)+'%'; return v.toFixed(2); }
+
+function tableHTML(rows, cols){
+  let h = '<table><thead><tr>'+cols.map(c=>'<th>'+c.t+'</th>').join('')+'</tr></thead><tbody>';
+  for(const r of rows){
+    h += '<tr>'+cols.map(c=>{
+      let v = r[c.k];
+      let cell = (c.f)? c.f(v, r) : (v===null||v===undefined?'—':v);
+      return '<td>'+cell+'</td>';
+    }).join('')+'</tr>';
+  }
+  return h+'</tbody></table>';
+}
+
+// 1_2 优化目标组合
+document.getElementById('t-12').innerHTML = tableHTML(DATA.table_1_2, [
+  {t:'优化目标组合', k:'combo', f:(v,r)=> r.name?('<b>'+r.name+'</b><br><span style="color:var(--sub);font-size:11px">'+v+'</span>'):v},
+  {t:'消耗占比', k:'share', f:v=>fmt(v,'%')},
+  {t:'CPM(元)', k:'cpm', f:v=>fmt(v)},
+  {t:'目标出价(元)', k:'bid', f:v=>fmt(v)},
+  {t:'CTR', k:'ctr', f:v=>fmt(v,'%')},
+  {t:'浅层目标CVR', k:'scvr', f:v=>fmt(v,'%')},
+  {t:'深层目标CVR', k:'dcvr', f:v=> (v===null||v==='—')?'—':(typeof v==='number'?v.toFixed(2)+'%':v)},
+]);
+
+// 1_3 创意 by ID
+document.getElementById('t-13c').innerHTML = tableHTML(DATA.table_1_3_creative, [
+  {t:'创意形式', k:'name', f:(v,r)=> v+'<br><span style="color:var(--sub);font-size:11px">ID '+r.id+'</span>'},
+  {t:'消耗占比', k:'share', f:v=>fmt(v,'%')},
+  {t:'CPM(元)', k:'cpm', f:v=>fmt(v)},
+  {t:'目标出价(元)', k:'bid', f:v=>fmt(v)},
+  {t:'CTR', k:'ctr', f:v=>fmt(v,'%')},
+  {t:'浅层目标CVR', k:'scvr', f:v=>fmt(v,'%')},
+]);
+
+// 1_3 AIGC
+document.getElementById('t-13a').innerHTML = tableHTML(DATA.table_1_3_aigc, [
+  {t:'是否妙思AIGC', k:'aigc', f:v=> v==='是'?'<span class="tag">AIGC素材</span>':'非AIGC'},
+  {t:'消耗占比', k:'share', f:v=>fmt(v,'%')},
+  {t:'CPM(元)', k:'cpm', f:v=>fmt(v)},
+  {t:'目标出价(元)', k:'bid', f:v=>fmt(v)},
+  {t:'CTR', k:'ctr', f:v=>fmt(v,'%')},
+  {t:'浅层目标CVR', k:'scvr', f:v=>fmt(v,'%')},
+]);
+
+// 1_4 分品类 by OG
+(function(){
+  const wrap = document.getElementById('t-14');
+  const order = ['激活','下单','付费'];
+  let html = '';
+  for(const og of order){
+    const rows = DATA.table_1_4[og];
+    if(!rows) continue;
+    html += '<div style="font-weight:700;margin:14px 0 6px;color:var(--ink)">浅层优化目标：'+og+'</div>';
+    html += tableHTML(rows, [
+      {t:'上游APP', k:'app', f:v=>'<b>'+v+'</b>'},
+      {t:'消耗占比', k:'share', f:v=>fmt(v,'%')},
+      {t:'CPM(元)', k:'cpm', f:v=>fmt(v)},
+      {t:'CTR', k:'ctr', f:v=>fmt(v,'%')},
+      {t:'浅层目标CVR', k:'scvr', f:v=>fmt(v,'%')},
+    ]);
+  }
+  wrap.innerHTML = html || '<div class="note">无符合条件数据</div>';
+})();
+
+// 2_2 优化目标
+document.getElementById('t-22o').innerHTML = tableHTML(DATA.table_2_2_opt, [
+  {t:'浅层优化目标', k:'goal', f:v=>'<b>'+v+'</b>'},
+  {t:'消耗占比', k:'share', f:v=>fmt(v,'%')},
+  {t:'CPM(元)', k:'cpm', f:v=>fmt(v)},
+  {t:'目标出价(元)', k:'bid', f:v=>fmt(v)},
+  {t:'CTR', k:'ctr', f:v=>fmt(v,'%')},
+  {t:'浅层目标CVR', k:'scvr', f:v=>fmt(v,'%')},
+]);
+
+// ---------- SVG 折线图（真实消耗定位，隐藏坐标轴数值，tooltip仅日期） ----------
+function lineChart(dates, name, data, containerId, legendId){
+  const W=900,H=300, padL=16,padR=14,padT=18,padB=34;
+  const plotW=W-padL-padR, plotH=H-padT-padB;
+  const n=dates.length;
+  const minV=Math.min.apply(null,data), maxV=Math.max.apply(null,data);
+  const range=(maxV-minV)||1;
+  const lo=minV-range*0.08, hi=maxV+range*0.08;
+  const X=i=> padL + (n<=1?plotW/2: i/(n-1)*plotW);
+  const Y=v=> padT + (1-(v-lo)/(hi-lo))*plotH;
+  const color=PALETTE[0];
+  let svg='<svg class="chart" viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="xMidYMid meet">';
+  for(let g=0; g<=4; g++){
+    const yy=padT + g/4*plotH;
+    svg+='<line x1="'+padL+'" y1="'+yy+'" x2="'+(W-padR)+'" y2="'+yy+'" stroke="#eef2f6" stroke-width="1"/>';
+  }
+  const step=Math.max(1,Math.ceil(n/8));
+  for(let i=0;i<n;i+=step){ svg+='<text x="'+X(i)+'" y="'+(H-12)+'" text-anchor="middle" font-size="10.5" fill="#9aa5b1">'+dates[i]+'</text>'; }
+  const pts=data.map((v,i)=>X(i)+','+Y(v)).join(' ');
+  svg+='<polyline points="'+pts+'" fill="none" stroke="'+color+'" stroke-width="2.2" stroke-linejoin="round"/>';
+  data.forEach((v,i)=>{ svg+='<circle cx="'+X(i)+'" cy="'+Y(v)+'" r="2" fill="'+color+'"/>'; });
+  svg+='<g id="hg-'+containerId+'"></g>';
+  svg+='<rect id="ov-'+containerId+'" x="'+padL+'" y="'+padT+'" width="'+plotW+'" height="'+plotH+'" fill="transparent" style="cursor:crosshair"/>';
+  svg+='</svg>';
+  const cont=document.getElementById(containerId); cont.innerHTML=svg;
+  document.getElementById(legendId).innerHTML='<span><i style="background:'+color+'"></i>'+name+'</span>';
+  let tip=cont.querySelector('.tooltip'); if(!tip){ tip=document.createElement('div'); tip.className='tooltip'; cont.appendChild(tip); }
+  const ov=document.getElementById('ov-'+containerId), hg=document.getElementById('hg-'+containerId);
+  ov.addEventListener('mousemove',e=>{
+    const rect=ov.getBoundingClientRect();
+    const sx=(e.clientX-rect.left)/rect.width*plotW;
+    let i=Math.round(sx/(plotW/(n-1))); i=Math.max(0,Math.min(n-1,i));
+    hg.innerHTML='<line x1="'+X(i)+'" y1="'+padT+'" x2="'+X(i)+'" y2="'+(padT+plotH)+'" stroke="#cbd5e0" stroke-width="1" stroke-dasharray="4 3"/>'+
+      '<circle cx="'+X(i)+'" cy="'+Y(data[i])+'" r="4" fill="#fff" stroke="'+color+'" stroke-width="2"/>';
+    const scale=cont.clientWidth/W;
+    tip.style.left=(X(i)*scale+12)+'px'; tip.style.top=(padT*scale)+'px';
+    tip.innerHTML='<div class="tt-d">'+dates[i]+'</div><div style="opacity:.7;font-size:11px">消耗金额已隐藏</div>';
+    tip.style.display='block';
+  });
+  ov.addEventListener('mouseleave',()=>{ tip.style.display='none'; hg.innerHTML=''; });
+}
+
+lineChart(DATA.trend_1_1.dates, '应用商店整体', DATA.trend_1_1.overall, 'c-appstore','lg-appstore');
+lineChart(DATA.trend_1_1.dates, '二级开户行业 · AI与网络综合工具', DATA.trend_1_1.lv2_ai, 'c-lv2','lg-lv2');
+lineChart(DATA.trend_1_1.dates, '一级开户行业整体', DATA.trend_1_1.lv1_all, 'c-lv1','lg-lv1');
+lineChart(DATA.trend_2_1.dates, '应用商店整体（2025年8月）', DATA.trend_2_1.overall, 'c-h-appstore','lg-h-appstore');
+lineChart(DATA.trend_2_1.dates, '二级开户行业 · AI与网络综合工具（2025年8月）', DATA.trend_2_1.lv2_ai, 'c-h-lv2','lg-h-lv2');
+lineChart(DATA.trend_2_1.dates, '一级开户行业整体（2025年8月）', DATA.trend_2_1.lv1_all, 'c-h-lv1','lg-h-lv1');
+
+// ---------- 浏览器 TAB ----------
+(function(){
+  const tb = DATA.trend_b_1_1;
+  document.getElementById('b-lv2-title').textContent = '1.2 二级开户行业 · AI与网络综合工具（每日消耗走势）';
+  document.getElementById('b-lv1-title').textContent = '1.3 一级开户行业整体 · 软件工具（每日消耗走势）';
+  lineChart(tb.dates, '浏览器整体', tb.overall, 'c-b-appstore','lg-b-appstore');
+  lineChart(tb.dates, '二级开户行业 · AI与网络综合工具', tb.lv2_ai, 'c-b-lv2','lg-b-lv2');
+  lineChart(tb.dates, '一级开户行业整体', tb.lv1_all, 'c-b-lv1','lg-b-lv1');
+
+  // 2、优化目标组合
+  document.getElementById('t-b-12').innerHTML = tableHTML(DATA.table_b_1_2, [
+    {t:'优化目标组合', k:'combo', f:(v,r)=> r.name?('<b>'+r.name+'</b><br><span style="color:var(--sub);font-size:11px">'+v+'</span>'):v},
+    {t:'消耗占比', k:'share', f:v=>fmt(v,'%')},
+    {t:'CPM(元)', k:'cpm', f:v=>fmt(v)},
+    {t:'目标出价(元)', k:'bid', f:v=>fmt(v)},
+    {t:'CTR', k:'ctr', f:v=>fmt(v,'%')},
+    {t:'浅层目标CVR', k:'scvr', f:v=>fmt(v,'%')},
+    {t:'深层目标CVR', k:'dcvr', f:v=> (v===null||v==='—')?'—':(typeof v==='number'?v.toFixed(2)+'%':v)},
+  ]);
+  // 3.1 按创意形式
+  document.getElementById('t-b-13c').innerHTML = tableHTML(DATA.table_b_1_3_creative, [
+    {t:'创意形式', k:'name', f:(v,r)=> v+'<br><span style="color:var(--sub);font-size:11px">ID '+r.id+'</span>'},
+    {t:'消耗占比', k:'share', f:v=>fmt(v,'%')},
+    {t:'CPM(元)', k:'cpm', f:v=>fmt(v)},
+    {t:'目标出价(元)', k:'bid', f:v=>fmt(v)},
+    {t:'CTR', k:'ctr', f:v=>fmt(v,'%')},
+    {t:'浅层目标CVR', k:'scvr', f:v=>fmt(v,'%')},
+  ]);
+  // 3.2 按 AIGC
+  document.getElementById('t-b-13a').innerHTML = tableHTML(DATA.table_b_1_3_aigc, [
+    {t:'是否妙思AIGC', k:'aigc', f:v=> v==='是'?'<span class="tag">AIGC素材</span>':'非AIGC'},
+    {t:'消耗占比', k:'share', f:v=>fmt(v,'%')},
+    {t:'CPM(元)', k:'cpm', f:v=>fmt(v)},
+    {t:'目标出价(元)', k:'bid', f:v=>fmt(v)},
+    {t:'CTR', k:'ctr', f:v=>fmt(v,'%')},
+    {t:'浅层目标CVR', k:'scvr', f:v=>fmt(v,'%')},
+  ]);
+})();
+
+// ---------- TAB 切换 ----------
+document.querySelectorAll('.tab').forEach(t=>{
+  t.addEventListener('click', ()=>{
+    document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+    document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));
+    t.classList.add('active');
+    document.getElementById('panel-'+t.dataset.tab).classList.add('active');
+  });
+});
+</script>
+</body>
+</html>
