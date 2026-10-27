@@ -1,0 +1,138 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>浏览器生态（for 上游APP拉活）投放梳理</title><style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#f4f6f8;color:#1f2328;font:14px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1240px;margin:0 auto;padding:28px 22px 56px}
+.hero{background:linear-gradient(120deg,#1e3a8a 0%,#2f6feb 62%,#3b82f6 100%);border-radius:16px;padding:28px 34px;color:#fff;box-shadow:0 8px 26px rgba(30,58,138,.18)}
+.hero h1{font-size:25px;font-weight:700;letter-spacing:.3px}
+.hero p{margin-top:8px;font-size:14px;color:#dbeafe}
+.sec{margin-top:26px;background:#fff;border:1px solid #e5e9ef;border-radius:14px;padding:24px 26px;box-shadow:0 1px 3px rgba(15,23,42,.04)}
+.sec h2{font-size:18px;font-weight:700;color:#0f172a;display:flex;align-items:center;gap:10px}
+.sec h2 .no{background:#2f6feb;color:#fff;width:26px;height:26px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;font-size:14px}
+.sec .sub{margin:6px 0 16px;color:#64748b;font-size:13px}
+.note{margin-top:14px;background:#f8fafc;border:1px dashed #cbd5e1;border-radius:10px;padding:12px 15px;font-size:12.5px;color:#475569;line-height:1.75}
+.note b{color:#1e293b}
+.tb{width:100%;border-collapse:collapse;font-size:13px}
+.tb th{background:#f1f5f9;color:#475569;font-weight:600;text-align:right;padding:9px 12px;border-bottom:1px solid #e2e8f0;white-space:nowrap;font-size:12.5px}
+.tb th.l{text-align:left}
+.tb td{padding:8px 12px;border-bottom:1px solid #eef2f7;text-align:right;white-space:nowrap}
+.tb td.l{text-align:left}
+.tb td.nm{font-weight:700;color:#0f172a}
+.tb tr.lv1 td{background:#f8fafc;border-top:1px solid #e2e8f0;font-weight:600}
+.tb tr.lv2 td{color:#334155}
+.tb tr.lv2 td.l{padding-left:34px;color:#475569}
+.tb tr.tot td{background:#eef4ff;border-top:2px solid #bfdbfe;font-weight:700;color:#0f172a}
+.mech{border:1px solid #e5e9ef;border-radius:12px;overflow:hidden}
+.mech .row{display:grid;grid-template-columns:150px 1fr;border-bottom:1px solid #eef2f7}
+.mech .row:last-child{border-bottom:none}
+.mech .row .hd{background:#f8fafc;padding:13px 16px;font-weight:600;font-size:13px;color:#334155;border-right:1px solid #eef2f7}
+.mech .row .bd{padding:13px 16px;font-size:13px;color:#334155;line-height:1.75}
+.tag{display:inline-block;background:#eef2ff;color:#3730a3;border-radius:5px;padding:1px 7px;font-size:11.5px;margin-right:6px}
+.tag.r{background:#fef3c7;color:#92400e}
+.tag.g{background:#dcfce7;color:#166534}
+.lg{display:flex;gap:16px;align-items:center;font-size:12px;color:#64748b;margin-top:10px}
+.lg i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+.foot{margin-top:24px;color:#94a3b8;font-size:12px;text-align:center}
+</style></head><body><div class="wrap">
+<div class="hero">
+<h1>浏览器生态（for 上游 APP 拉活）投放梳理</h1>
+<p>观察窗口 2026/07/01 – 2026/10/26　·　OPPO 浏览器 + VIVO 浏览器 合并全量口径</p></div>
+<div class="sec"><h2><span class="no">0</span>浏览器消耗趋势（7/1 – 10/26）</h2><div class="sub">纵轴已隐藏，仅呈现走势形态</div>
+<svg viewBox="0 0 1180 290" width="100%" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="ag" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2f6feb" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#2f6feb" stop-opacity="0.02"/></linearGradient></defs>
+<rect x="16.0" y="24" width="294.4" height="226" fill="#f8fafc"/>
+<rect x="320.2" y="24" width="294.4" height="226" fill="#ffffff"/>
+<rect x="624.3" y="24" width="284.5" height="226" fill="#f8fafc"/>
+<rect x="918.7" y="24" width="245.3" height="226" fill="#ffffff"/>
+<path d="M16.0,250.0 L16.0,239.9 L25.8,250.0 L35.6,247.5 L45.4,238.0 L55.2,239.7 L65.1,245.2 L74.9,219.1 L84.7,248.3 L94.5,216.0 L104.3,216.3 L114.1,212.7 L123.9,204.6 L133.7,225.2 L143.6,199.7 L153.4,225.0 L163.2,203.1 L173.0,186.1 L182.8,179.7 L192.6,165.4 L202.4,177.9 L212.2,183.4 L222.1,199.6 L231.9,207.2 L241.7,185.6 L251.5,170.9 L261.3,168.0 L271.1,161.3 L280.9,189.4 L290.7,184.2 L300.5,178.4 L310.4,185.7 L320.2,144.0 L330.0,193.7 L339.8,209.6 L349.6,191.9 L359.4,188.7 L369.2,165.6 L379.0,194.3 L388.9,202.7 L398.7,192.6 L408.5,205.1 L418.3,211.4 L428.1,192.1 L437.9,202.9 L447.7,220.0 L457.5,236.8 L467.4,233.8 L477.2,214.7 L487.0,208.4 L496.8,196.8 L506.6,205.2 L516.4,207.5 L526.2,185.1 L536.0,165.0 L545.8,173.7 L555.7,171.8 L565.5,140.2 L575.3,107.3 L585.1,77.8 L594.9,61.7 L604.7,65.8 L614.5,62.9 L624.3,89.0 L634.2,81.2 L644.0,100.2 L653.8,98.0 L663.6,123.3 L673.4,112.4 L683.2,132.7 L693.0,162.2 L702.8,203.3 L712.6,190.3 L722.5,156.9 L732.3,118.3 L742.1,147.3 L751.9,149.0 L761.7,134.7 L771.5,169.8 L781.3,177.7 L791.1,167.8 L801.0,163.9 L810.8,160.8 L820.6,179.2 L830.4,198.6 L840.2,156.9 L850.0,174.4 L859.8,159.7 L869.6,137.6 L879.5,165.8 L889.3,162.4 L899.1,126.8 L908.9,66.7 L918.7,74.9 L928.5,24.0 L938.3,72.9 L948.1,68.1 L957.9,83.7 L967.8,61.1 L977.6,99.0 L987.4,79.6 L997.2,127.5 L1007.0,143.6 L1016.8,149.3 L1026.6,148.8 L1036.4,168.6 L1046.3,168.9 L1056.1,52.2 L1065.9,82.0 L1075.7,83.4 L1085.5,72.5 L1095.3,88.0 L1105.1,84.2 L1114.9,116.3 L1124.8,126.0 L1134.6,120.6 L1144.4,135.8 L1154.2,140.8 L1164.0,182.7 L1164.0,250.0 Z" fill="url(#ag)"/>
+<polyline points="16.0,239.9 25.8,250.0 35.6,247.5 45.4,238.0 55.2,239.7 65.1,245.2 74.9,219.1 84.7,248.3 94.5,216.0 104.3,216.3 114.1,212.7 123.9,204.6 133.7,225.2 143.6,199.7 153.4,225.0 163.2,203.1 173.0,186.1 182.8,179.7 192.6,165.4 202.4,177.9 212.2,183.4 222.1,199.6 231.9,207.2 241.7,185.6 251.5,170.9 261.3,168.0 271.1,161.3 280.9,189.4 290.7,184.2 300.5,178.4 310.4,185.7 320.2,144.0 330.0,193.7 339.8,209.6 349.6,191.9 359.4,188.7 369.2,165.6 379.0,194.3 388.9,202.7 398.7,192.6 408.5,205.1 418.3,211.4 428.1,192.1 437.9,202.9 447.7,220.0 457.5,236.8 467.4,233.8 477.2,214.7 487.0,208.4 496.8,196.8 506.6,205.2 516.4,207.5 526.2,185.1 536.0,165.0 545.8,173.7 555.7,171.8 565.5,140.2 575.3,107.3 585.1,77.8 594.9,61.7 604.7,65.8 614.5,62.9 624.3,89.0 634.2,81.2 644.0,100.2 653.8,98.0 663.6,123.3 673.4,112.4 683.2,132.7 693.0,162.2 702.8,203.3 712.6,190.3 722.5,156.9 732.3,118.3 742.1,147.3 751.9,149.0 761.7,134.7 771.5,169.8 781.3,177.7 791.1,167.8 801.0,163.9 810.8,160.8 820.6,179.2 830.4,198.6 840.2,156.9 850.0,174.4 859.8,159.7 869.6,137.6 879.5,165.8 889.3,162.4 899.1,126.8 908.9,66.7 918.7,74.9 928.5,24.0 938.3,72.9 948.1,68.1 957.9,83.7 967.8,61.1 977.6,99.0 987.4,79.6 997.2,127.5 1007.0,143.6 1016.8,149.3 1026.6,148.8 1036.4,168.6 1046.3,168.9 1056.1,52.2 1065.9,82.0 1075.7,83.4 1085.5,72.5 1095.3,88.0 1105.1,84.2 1114.9,116.3 1124.8,126.0 1134.6,120.6 1144.4,135.8 1154.2,140.8 1164.0,182.7" fill="none" stroke="#2f6feb" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="928.5" cy="24.0" r="3.5" fill="#fff" stroke="#2f6feb" stroke-width="2"/>
+<circle cx="25.8" cy="250.0" r="3.5" fill="#fff" stroke="#2f6feb" stroke-width="2"/>
+<line x1="16" y1="250" x2="1164" y2="250" stroke="#cbd5e1" stroke-width="1"/>
+<text x="163.2" y="276" text-anchor="middle" font-size="13" fill="#334155" font-weight="600">7月</text>
+<text x="467.4" y="276" text-anchor="middle" font-size="13" fill="#334155" font-weight="600">8月</text>
+<text x="766.6" y="276" text-anchor="middle" font-size="13" fill="#334155" font-weight="600">9月</text>
+<text x="1041.4" y="276" text-anchor="middle" font-size="13" fill="#334155" font-weight="600">10月</text>
+</svg>
+<div class="note">整体增长快，7–10 月<b>平均每月环比上月均有 10%+ 增长</b>，是<b>快速增长的赛道</b>。</div>
+</div>
+<div class="sec"><h2><span class="no">1</span>分版位 × 分优化目标</h2><div class="sub">第一层为版位，版位下拆分优化目标；指标为 7/1 – 10/26 全窗口合并值</div>
+<table class="tb tree"><thead><tr><th class="l">版位 ／ 优化目标</th><th>消耗占比</th>
+<th>目标出价(元)</th><th>CPM(元)</th><th>CTR(%)</th><th>CVR(%)</th></tr></thead><tbody>
+<tr class="lv1"><td class="l nm">▸ 移动联盟</td><td>60–65%</td><td>0.85–0.90</td><td>6.5–7.0</td><td>15–20</td><td>20–25</td></tr>
+<tr class="lv2"><td class="l">└ 关键页面访问人数</td><td>40–45%</td><td>0.95–1.00</td><td>6.5–7.0</td><td>10–15</td><td>15–20</td></tr>
+<tr class="lv2"><td class="l">└ 关键页面访问</td><td>20–25%</td><td>0.10–0.15</td><td>6.5–7.0</td><td>20–25</td><td>20–25</td></tr>
+<tr class="lv2"><td class="l">└ 下单</td><td>0.10–0.15%</td><td>35–40</td><td>4.5–5.0</td><td>10–15</td><td>0.085–0.090</td></tr>
+<tr class="lv2"><td class="l">└ 其他目标</td><td>0.10–0.15%</td><td>40–45</td><td>8.5–9.0</td><td>10–15</td><td>0.15–0.20</td></tr>
+<tr class="lv1"><td class="l nm">▸ 平台与内容广告</td><td>30–35%</td><td>1.0–1.5</td><td>6.5–7.0</td><td>10–15</td><td>20–25</td></tr>
+<tr class="lv2"><td class="l">└ 关键页面访问人数</td><td>20–25%</td><td>1.0–1.5</td><td>6.0–6.5</td><td>10–15</td><td>15–20</td></tr>
+<tr class="lv2"><td class="l">└ 关键页面访问</td><td>6.5–7.0%</td><td>0.10–0.15</td><td>10–15</td><td>25–30</td><td>30–35</td></tr>
+<tr class="lv2"><td class="l">└ 下单</td><td>0.40–0.45%</td><td>10–15</td><td>8.0–8.5</td><td>10–15</td><td>0.25–0.30</td></tr>
+<tr class="lv1"><td class="l nm">▸ 搜索广告</td><td>3.5–4.0%</td><td>0.95–1.00</td><td>3.5–4.0</td><td>6.0–6.5</td><td>20–25</td></tr>
+<tr class="lv2"><td class="l">└ 关键页面访问人数</td><td>3.0–3.5%</td><td>0.80–0.85</td><td>3.0–3.5</td><td>5.0–5.5</td><td>15–20</td></tr>
+<tr class="lv2"><td class="l">└ 关键页面访问</td><td>0.45–0.50%</td><td>0.10–0.15</td><td>25–30</td><td>55–60</td><td>35–40</td></tr>
+<tr class="lv1"><td class="l nm">▸ 微信系（合计）</td><td>0.50–0.55%</td><td>4.5–5.0</td><td>9.5–10.0</td><td>6.0–6.5</td><td>10–15</td></tr>
+<tr class="lv2"><td class="l">└ 关键页面访问人数</td><td>0.50–0.55%</td><td>3.0–3.5</td><td>10–15</td><td>7.0–7.5</td><td>10–15</td></tr>
+<tr class="tot"><td class="l nm">合计</td>
+<td>100%</td><td>0.90–0.95</td><td>6.5–7.0</td><td>10–15</td><td>20–25</td></tr>
+</tbody></table>
+<div class="note"><b>关于「未识别」：</b>浏览器不存在「自有业务」概念。VIVO 浏览器的福利页、阅读页等广告，
+客户<b>未在广告名中标注上游 APP</b>，我方无法识别其归属，这部分已在「上游 APP 消耗占比」中单列为「未识别」。
+另：微信系四个版位（小程序/公众号/搜一搜/朋友圈）合计占比不足 2%，合并为一行展示。</div>
+</div>
+<div class="sec"><h2><span class="no">2</span>上游 APP 消耗占比</h2><div class="sub">共 50 个上游 APP 有消耗，下图为占比 TOP12 + 其他长尾</div>
+<svg viewBox="0 0 900 452" width="100%">
+<text x="0" y="20" font-size="13.5" fill="#1f2328" font-weight="600">未识别</text>
+<rect x="170" y="5" width="620.0" height="19" rx="3" fill="#94a3b8" opacity="1"/>
+<text x="798.0" y="20" font-size="12.5" fill="#334155" font-weight="600">25–30%</text>
+<text x="0" y="54" font-size="13.5" fill="#1f2328" >百度</text>
+<rect x="170" y="39" width="594.9" height="19" rx="3" fill="#2f6feb" opacity="1"/>
+<text x="772.9" y="54" font-size="12.5" fill="#334155" >25–30%</text>
+<text x="0" y="88" font-size="13.5" fill="#1f2328" >飞鸟短剧</text>
+<rect x="170" y="73" width="433.4" height="19" rx="3" fill="#2f6feb" opacity="1"/>
+<text x="611.4" y="88" font-size="12.5" fill="#334155" >20–25%</text>
+<text x="0" y="122" font-size="13.5" fill="#1f2328" >红果短剧</text>
+<rect x="170" y="107" width="104.8" height="19" rx="3" fill="#2f6feb" opacity="1"/>
+<text x="282.8" y="122" font-size="12.5" fill="#334155" >5.0–5.5%</text>
+<text x="0" y="156" font-size="13.5" fill="#1f2328" >快手</text>
+<rect x="170" y="141" width="88.0" height="19" rx="3" fill="#2f6feb" opacity="1"/>
+<text x="266.0" y="156" font-size="12.5" fill="#334155" >4.0–4.5%</text>
+<text x="0" y="190" font-size="13.5" fill="#1f2328" >FNJC</text>
+<rect x="170" y="175" width="73.2" height="19" rx="3" fill="#2f6feb" opacity="1"/>
+<text x="251.2" y="190" font-size="12.5" fill="#334155" >3.5–4.0%</text>
+<text x="0" y="224" font-size="13.5" fill="#1f2328" >千问</text>
+<rect x="170" y="209" width="38.8" height="19" rx="3" fill="#2f6feb" opacity="1"/>
+<text x="216.8" y="224" font-size="12.5" fill="#334155" >1.5–2.0%</text>
+<text x="0" y="258" font-size="13.5" fill="#1f2328" >花园剧场</text>
+<rect x="170" y="243" width="32.5" height="19" rx="3" fill="#2f6feb" opacity="1"/>
+<text x="210.5" y="258" font-size="12.5" fill="#334155" >1.5–2.0%</text>
+<text x="0" y="292" font-size="13.5" fill="#1f2328" >启幕剧场</text>
+<rect x="170" y="277" width="17.9" height="19" rx="3" fill="#2f6feb" opacity="1"/>
+<text x="195.9" y="292" font-size="12.5" fill="#334155" >0.85–0.90%</text>
+<text x="0" y="326" font-size="13.5" fill="#1f2328" >趣多拍</text>
+<rect x="170" y="311" width="16.1" height="19" rx="3" fill="#2f6feb" opacity="1"/>
+<text x="194.1" y="326" font-size="12.5" fill="#334155" >0.75–0.80%</text>
+<text x="0" y="360" font-size="13.5" fill="#1f2328" >魔豆剧场</text>
+<rect x="170" y="345" width="8.5" height="19" rx="3" fill="#2f6feb" opacity="1"/>
+<text x="186.5" y="360" font-size="12.5" fill="#334155" >0.40–0.45%</text>
+<text x="0" y="394" font-size="13.5" fill="#1f2328" >京东</text>
+<rect x="170" y="379" width="7.9" height="19" rx="3" fill="#2f6feb" opacity="1"/>
+<text x="185.9" y="394" font-size="12.5" fill="#334155" >0.35–0.40%</text>
+<text x="0" y="428" font-size="13.5" fill="#1f2328" font-weight="600">其他长尾</text>
+<rect x="170" y="413" width="42.3" height="19" rx="3" fill="#2f6feb" opacity="0.55"/>
+<text x="220.3" y="428" font-size="12.5" fill="#334155" font-weight="600">2.0–2.5%</text>
+</svg>
+<div class="lg"><span><i style="background:#2f6feb"></i>已识别上游 APP</span><span><i style="background:#94a3b8"></i>未识别（广告名未标注上游 APP）</span></div>
+<div class="note">「未识别」＝广告名未标注上游 APP（如 VIVO 浏览器福利页/阅读页等）；FNJC、LLQ、TB、QDP 等编码化品名按原码保留、未做推测归并。</div>
+</div>
+<div class="sec"><h2><span class="no">3</span>业务机制：关键约束</h2><div class="sub">平台侧 RTA 接入现状</div>
+<div class="mech">
+<div class="row"><div class="hd">OPPO 浏览器</div><div class="bd"><span class="tag g">全线接入 RTA</span>浏览器所有广告形式均已接入 RTA。</div></div>
+<div class="row"><div class="hd">VIVO 浏览器</div><div class="bd"><span class="tag">拉新</span><span class="tag">拉活</span><span class="tag">混投</span>共三种业务形式。其中<b>单独 for 拉新</b>、<b>单独 for 拉活</b>的广告<b>均已接入 RTA</b>；<b>混投未接入 RTA</b>。</div></div>
+<div class="row"><div class="hd">关键约束</div><div class="bd"><span class="tag r">重要</span>在<b>纯拉活</b>场景下，腾讯广告系统<b>无法识别用户是否已安装上游 APP</b>，该判断需由<b>客户通过 RTA 自行完成</b>并回传判定结果。</div></div>
+</div></div>
+<div class="foot">浏览器生态（for 上游 APP 拉活）投放梳理　|　数据窗口 2026/07/01 – 2026/10/26</div>
+</div></body></html>

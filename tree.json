@@ -18,7 +18,8 @@
   "Xiaomi"
  ],
  "Phone/Eco/Ecosystem": [
-  "Monthly_Review"
+  "Monthly_Review",
+  "Browser_Live"
  ],
  "Phone/Eco/Ecosystem/Monthly_Review": [
   "20260909_Phone_Eco_Monthly_Report",
@@ -117,5 +118,9 @@
   "20260805_Review"
  ],
  "Phone/Eco/Xiaomi/Review/20260805_Review": [],
- "Phone/Fans": []
+ "Phone/Fans": [],
+ "Phone/Eco/Ecosystem/Browser_Live": [
+  "20261027_Browser_Eco_Live"
+ ],
+ "Phone/Eco/Ecosystem/Browser_Live/20261027_Browser_Eco_Live": []
 }
