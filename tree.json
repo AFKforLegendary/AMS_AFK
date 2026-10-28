@@ -1,5 +1,6 @@
 {
  "": [
+  "ClosedLoop_Ecom",
   "Phone"
  ],
  "Phone": [
@@ -122,5 +123,18 @@
  "Phone/Eco/Ecosystem/Browser_Live": [
   "20261027_Browser_Eco_Live"
  ],
- "Phone/Eco/Ecosystem/Browser_Live/20261027_Browser_Eco_Live": []
+ "Phone/Eco/Ecosystem/Browser_Live/20261027_Browser_Eco_Live": [],
+ "ClosedLoop_Ecom": [
+  "Digital"
+ ],
+ "ClosedLoop_Ecom/Digital": [
+  "DJI"
+ ],
+ "ClosedLoop_Ecom/Digital/DJI": [
+  "Review"
+ ],
+ "ClosedLoop_Ecom/Digital/DJI/Review": [
+  "20261028_Review"
+ ],
+ "ClosedLoop_Ecom/Digital/DJI/Review/20261028_Review": []
 }
